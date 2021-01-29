@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title>Featured Deals in Your Area</title>
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/D128CE6E-7EA1-2A41-BF97-B4D3A1E42EA3/main.js" charset="UTF-8"></script></head>
+  <link rel = "stylesheet" type = "text/css" href = "featured.css">
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded',function(){
+      let stores = ['Albertsons','Vons','Pavilions'];
+      for (let i = 0; i < stores.length; ++i)
+      {
+        let child = document.getElementById(stores[i]).getElementsByTagName("input")[0];
+        child.checked = false;}
+      });
+    function fxn(id)
+    {
+      child = document.getElementById(id).getElementsByTagName("input")[0];
+      console.log(child.checked);
+      if (child.checked == false)
+      {
+        child.checked = true;
+        console.log("test");
+        document.getElementById(id).className="Card2";
+      }
+      else {
+        child.checked = false;
+        console.log("hi");
+        document.getElementById(id).className="Card";
+      }
+    }
+  </script>
+
+  <body>
+    <h1>Featured Deals</h1>
+    <form action="/selection" method="GET">
+      <div class = "Card_list">
+        <div id="Albertsons" class = "Card" onclick="fxn(this.id)">
+          <input type="checkbox" name="Albertsons">
+          <img src="https://media.spokesman.com/photos/2017/08/04/albertsons-logo.png">
+          <div class = "container">
+            <p>FIND THE BEST DEALS AT ALBERTSONS</p>
+          </div>
+          </input>
+        </div>
+        <div id="Vons" class = "Card" onclick="fxn(this.id)">
+          <input type="checkbox" name="Vons">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Vons_logo.svg/755px-Vons_logo.svg.png">
+          <div class = "container">
+            <p>FIND THE BEST DEALS AT VONS</p>
+          </div>
+        </input>
+        </div>
+        <div id="Pavilions" class = "Card" onclick="fxn(this.id)">
+          <input type="checkbox" name="Pavilions">
+          <img src="http://www.pavilions.com/CMS/assets/media/images/header/logos/header_logo_pavilions.png">
+          <div class = "container" >
+            <p>FIND THE BEST DEALS AT PAVILION</p>
+          </div>
+        </input>
+        </div>
+      </div>
+      <div id = "submit_button">
+        <button type ="submit">Submit</button>
+      </div>
+    </form>
+    <img src="https://media.discordapp.net/attachments/408453007366422538/409751248942923776/Map_Screenshot.PNG"/>
+  </body>
+
+</html>

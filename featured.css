@@ -1,0 +1,65 @@
+h1{
+  font-family: Verdana;
+  font-size: 1.5em;
+  color: skyblue;
+  text-align: center;
+}
+.Card_list{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+  align-items: stretch;
+}
+
+.Card_list > .Card{
+  border: 2px solid #9DD1F1;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  grid-gap: 10px;
+}
+
+.Card_list > .Card2{
+  border: 2px solid #9DD1F1;
+  text-align: center;
+  grid-gap: 10px;
+}
+input{
+  visibility: hidden;
+}
+
+.Card:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  opacity: 0.3;
+
+}
+.Card2:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  opacity: 0.3;
+}
+.Card_list > .Card img{
+  width: 55%;
+  height: 20vh;
+  margin: 4px 0;
+}
+.Card_list > .Card2 img{
+  width: 55%;
+  height: 20vh;
+  margin: 4px 0;
+}
+.Card p{
+  font-family: Verdana;
+  font-size: 1.2em;
+  margin: 0 2px;
+  display: block;
+}
+.Card2 p{
+  font-family: Verdana;
+  font-size: 1.2em;
+  margin: 0 2px;
+  display: block;
+}
+
+img {
+  margin-top: 10%;
+  margin-left: 30%;
+  margin-right: 30%;
+}

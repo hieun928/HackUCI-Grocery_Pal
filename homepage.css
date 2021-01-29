@@ -1,0 +1,81 @@
+html{
+  background-image: url("https://www.beachhouseseniorliving.com/wp-content/uploads/2017/06/Diet-and-Exercise-for-Seniors_Beach-House-Assisted-Living-Jacksonville.jpg");
+  background-size: 100% auto;
+}
+body{
+  background-color: white;
+  margin: auto 20px;
+}
+
+header{
+  background-color: blue;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+ul{
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+}
+
+li a{
+  float: left;
+  background-color: #333;
+  color: white;
+  font-family: Verdana;
+  text-align:center;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: inline;
+  text-decoration: none;
+}
+
+h1{
+  text-align: center;
+  margin-top: 5%;
+  font-family: Verdana;
+  color: gold;
+  background-color: black;
+  border-radius: 15px;
+  border: dotted gold;
+  border-radius: 10;
+}
+.items{
+  display: grid;
+  grid-template-columns:repeat(auto-fill,minmax(200px, 1fr));
+  align-items: stretch;
+  grid-gap: 10px;
+}
+.items > .card{
+  border: 2px solid #9DD1F1;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.items > .card img{
+  max-width: 100%;
+  height: 25vh;
+}
+.card #title{
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: 0.8em;
+  margin: 0 auto;
+  display: block;
+}
+.card #deal{
+  font-size: 0.7em;
+  margin: 0 auto;
+  display: block;
+
+  font-family:Verdana;
+}
